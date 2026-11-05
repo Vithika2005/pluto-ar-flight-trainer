@@ -1,0 +1,13 @@
+{
+  "name": "pluto-ar-backend",
+  "version": "1.0.0",
+  "description": "REST API + SQLite database for the Pluto AR Flight Trainer (CPAD mini project)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=22.13.0" },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+node_modules/
+backend/*.db
+backend/*.db-*
+app/.dart_tool/
+app/build/
+app/.flutter-plugins*
+app/.packages
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/pubspec.lock
+.DS_Store
