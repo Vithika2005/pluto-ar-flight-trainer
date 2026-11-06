@@ -205,9 +205,9 @@ class _ArScreenState extends State<ArScreen> with SingleTickerProviderStateMixin
     final d = _drone;
     final s = _shadow;
     if (d == null || s == null) return;
-    d.position.value = _flightPos();
-    d.eulerAngles.value = vm.Vector3(_flight.tiltPitch, -_flight.yaw, _flight.tiltRoll);
-    s.position.value = vm.Vector3(_flight.position.x, 0.003, _flight.position.z);
+    d.position = _flightPos();
+    d.eulerAngles = vm.Vector3(_flight.tiltPitch, -_flight.yaw, _flight.tiltRoll);
+    s.position = vm.Vector3(_flight.position.x, 0.003, _flight.position.z);
     if (_session.scene.version != _renderedVersion) _rebuildStatic();
   }
 
@@ -379,12 +379,12 @@ class _ArScreenState extends State<ArScreen> with SingleTickerProviderStateMixin
 
   void _rotate() {
     _courseYaw += math.pi / 4;
-    _root?.eulerAngles.value = vm.Vector3(0, _courseYaw, 0);
+    _root?.eulerAngles = vm.Vector3(0, _courseYaw, 0);
   }
 
   void _cycleScale() {
     _scale = _scale == 0.25 ? 0.5 : (_scale == 0.5 ? 1.0 : 0.25);
-    _root?.scale.value = vm.Vector3.all(_scale);
+    _root?.scale = vm.Vector3.all(_scale);
     _showBanner('Course scale ${_scale}x', Colors.white);
   }
 
