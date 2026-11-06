@@ -3,9 +3,9 @@ title: "Pluto AR Flight Trainer - Project Documentation"
 subtitle: "CPAD Lab Examination - Mini Project"
 ---
 
-**Student name:** ____________________  **Roll no.:** ____________  **Division:** ________
+**Student name:** Vithika Surve  **Roll no.:** 241071902  **Division:** LY BTECH CE
 **Framework used:** Flutter (Dart)  **AR platform:** Apple ARKit (iPhone)
-**Source repository:** ____________________ (GitHub link)
+**Source repository:** https://github.com/Vithika2005/pluto-ar-flight-trainer.git (GitHub link)
 
 # 1. Abstract
 
